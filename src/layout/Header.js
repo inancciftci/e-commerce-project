@@ -39,11 +39,49 @@ export default function Header() {
         </div>
       </div>
       <div className="container mx-auto py-[1rem] flex">
-        <div className="flex gap-x-[1rem]">
+        <div className="flex justify-between items-center gap-[3rem] w-[100%]">
           <a href="#" className="text-[2.4rem] font-[700]">
             Bandage
           </a>
-          <nav></nav>
+          <nav className="flex items-center gap-[3rem] justify-between w-[100%]">
+            <div className="flex gap-[2rem]">
+              <a href="" className="font-[500]">
+                Home
+              </a>
+              <a href="" className="font-[500]">
+                Shop
+              </a>
+              <a href="" className="font-[500]">
+                About
+              </a>
+              <a href="" className="font-[500]">
+                Blog
+              </a>
+              <a href="" className="font-[500]">
+                Contact
+              </a>
+              <a href="" className="font-[500]">
+                Pages
+              </a>
+            </div>
+            <div>
+              <ul className="flex gap-[2rem] text-[#252B42]">
+                <li className="text-[1.4rem] cursor-pointer flex gap-[1rem] items-center">
+                  <i className="fa-solid fa-user"></i>
+                  <div>Login / Register</div>
+                </li>
+                <li className="text-[1.4rem] cursor-pointer">
+                  <i className="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li className="text-[1.4rem] cursor-pointer">
+                  <i className="fa-solid fa-cart-shopping"></i>
+                </li>
+                <li className="text-[1.4rem] cursor-pointer">
+                  <i className="fa-solid fa-heart"></i>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
     </>

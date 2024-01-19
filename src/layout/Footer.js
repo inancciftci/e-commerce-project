@@ -75,7 +75,7 @@ export default function Footer() {
       </div>
       <div className="bg-[#FAFAFA]">
         <div className="container mx-auto">
-          <p className="font-bold text-[#737373] py-[2rem]">
+          <p className="font-[500] text-[#737373] py-[2rem]">
             Design By: FigmaLand - Coded By: Inanc Ciftci
           </p>
         </div>
