@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <>
       <div className="bg-[#252B42]">
-        <div className="max-sm:hidden container mx-auto py-[1rem] flex justify-between color text-white items-center">
+        <div className="max-md:hidden container mx-auto py-[1rem] flex justify-between color text-white items-center">
           <div className="flex gap-x-[3rem]">
             <button className="flex items-center gap-x-[0.5rem]">
               <i className="fa-solid fa-phone decoration-white"></i>
