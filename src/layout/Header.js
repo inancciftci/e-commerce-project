@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function Header() {
   return (
@@ -45,21 +46,21 @@ export default function Header() {
           </a>
           <nav className="flex items-center gap-[3rem] justify-between w-[100%]">
             <div className="flex gap-[2rem]">
-              <a href="" className="font-[500]">
+              <Link to="/" className="font-[500]">
                 Home
-              </a>
+              </Link>
               <a href="" className="font-[500]">
                 Shop
               </a>
-              <a href="" className="font-[500]">
+              <Link to="/about" className="font-[500]">
                 About
-              </a>
+              </Link>
               <a href="" className="font-[500]">
                 Blog
               </a>
-              <a href="" className="font-[500]">
+              <Link to="/contact" className="font-[500]">
                 Contact
-              </a>
+              </Link>
               <a href="" className="font-[500]">
                 Pages
               </a>
