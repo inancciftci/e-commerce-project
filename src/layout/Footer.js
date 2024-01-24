@@ -23,7 +23,10 @@ export default function Footer() {
           </div>
         </div>
         <hr className="my-[3rem]" />
-        <div id="footer-links" className="flex justify-between">
+        <div
+          id="footer-links"
+          className="flex flex-auto justify-between flex-wrap"
+        >
           <div className="flex flex-col gap-[1rem] flex-1">
             <h5>Company Info</h5>
             <a href="#">About Us</a>
