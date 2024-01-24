@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="flex h-[80vh]">
+    <div className="flex h-[90vh]">
       <div className="max-md:hidden flex flex-col justify-center p-[5rem] w-[50%] gap-[3rem] bg-[url('https://i.ibb.co/MkWJxRZ/floral-pattern.png')]">
         <h5 className="uppercase font-bold text-white">Summer Tag</h5>
         <h1 className="text-white">
