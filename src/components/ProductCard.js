@@ -28,7 +28,7 @@ export default function ProductCard() {
   };
 
   return (
-    <div className="w-[22%] max-md:w-[40%] max-sm:w-[90%] flex-auto flex flex-col gap-y-[1.5rem] p-[1rem]">
+    <div className="w-[22%] max-md:w-[40%] max-sm:w-[90%] flex-auto flex flex-col gap-y-[1.5rem] p-[1rem] bg-white">
       <div className="relative">
         <Slide {...properties}>
           <img
