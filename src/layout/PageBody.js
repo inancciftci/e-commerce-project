@@ -4,6 +4,7 @@ import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import TeamPage from "../pages/TeamPage";
 import ContactPage from "../pages/ContactPage";
+import ProductPage from "../pages/ProductPage";
 
 export default function PageBody() {
   return (
@@ -21,6 +22,9 @@ export default function PageBody() {
         </Route>
         <Route path="/contact" exact>
           <ContactPage />
+        </Route>
+        <Route path="/product" exact>
+          <ProductPage />
         </Route>
       </Switch>
     </>
