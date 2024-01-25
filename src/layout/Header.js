@@ -39,7 +39,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto py-[1rem] flex">
+      <div className="container mx-auto py-[2rem] flex">
         <div className="flex justify-between items-center gap-[3rem] w-[100%]">
           <a href="#" className="text-[2.4rem] font-[700]">
             Bandage
