@@ -24,7 +24,7 @@ export default function TeamPage() {
           <Link to="/team">Team</Link>
         </div>
       </div>
-      <div className="flex gap-[1rem]">
+      <div className="flex gap-[1rem] max-md:flex-col">
         <div className="flex-auto">
           <img
             className="w-[100%] object-cover"
@@ -32,7 +32,7 @@ export default function TeamPage() {
             alt=""
           />
         </div>
-        <div className="flex-auto flex flex-col justify-between">
+        <div className="flex-auto flex flex-col justify-between max-md:gap-[1rem]">
           <div className="flex gap-[1rem]">
             <div className="flex-auto w-[50%]">
               <img
@@ -84,13 +84,13 @@ export default function TeamPage() {
           ))}
         </div>
       </div>
-      <div className="container mx-auto text-center my-[5rem] flex flex-col gap-[2rem]">
+      <div className="container mx-auto text-center my-[5rem] flex flex-col gap-[2rem] max-md:w-[70%]">
         <h2>Start your 14 days free trial</h2>
-        <h6 className="w-[40%] mx-auto">
+        <h6 className="w-[40%] mx-auto max-md:w-[100%]">
           Met minim Mollie non desert Alamo est sit cliquey dolor do met sent.
           RELIT official consequent.
         </h6>
-        <button className="bg-[#23A6F0] text-white w-[25%] mx-auto py-[1rem] rounded-[0.5rem]">
+        <button className="bg-[#23A6F0] text-white w-[25%] max-md:w-[50%] mx-auto py-[1rem] rounded-[0.5rem]">
           Try it free now
         </button>
         <div className="flex gap-[2rem] justify-center items-center text-[2.4rem] text-[#23A6f0]">

@@ -8,7 +8,7 @@ import ProductPage from "../pages/ProductPage";
 
 export default function PageBody() {
   return (
-    <>
+    <div className="px-[1rem]">
       {/* Adding router */}
       <Switch>
         <Route path="/" exact>
@@ -27,6 +27,6 @@ export default function PageBody() {
           <ProductPage />
         </Route>
       </Switch>
-    </>
+    </div>
   );
 }

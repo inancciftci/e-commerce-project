@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { Slide } from "react-slideshow-image";
 // https://react-slideshow-image.netlify.app/
 import "react-slideshow-image/dist/styles.css";
@@ -28,7 +29,7 @@ export default function ProductCard() {
   };
 
   return (
-    <div className="w-[22%] max-md:w-[40%] max-sm:w-[90%] flex-auto flex flex-col gap-y-[1.5rem] p-[1rem] bg-white">
+    <div className="max-sm:w-[20rem] max-lg:w-[25%] w-[20%] flex-1 flex flex-col gap-y-[1.5rem] p-[1rem] bg-white">
       <div className="relative">
         <Slide {...properties}>
           <img
@@ -60,7 +61,7 @@ export default function ProductCard() {
         </div>
       </div>
       <div className="flex justify-between items-center ">
-        <a href="#" className="text-[#252B42] text-[1.4rem] font-[500]">
+        <a href="/product" className="text-[#252B42] text-[1.4rem] font-[500]">
           English Department
         </a>
         <div className="flex justify-around items-center gap-[0.75rem] bg-[#252B42] py-[0.5rem] px-[1.5rem] rounded-[3rem]">
@@ -69,7 +70,9 @@ export default function ProductCard() {
         </div>
       </div>
       <div className="flex flex-col gap-[1rem]">
-        <h5>Graphic Design</h5>
+        <Link to="/product">
+          <h5>Graphic Design</h5>
+        </Link>
         <p>
           We focus on ergonomics and meeting you where you work. It's only a
           keystroke away.

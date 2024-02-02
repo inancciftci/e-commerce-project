@@ -4,8 +4,8 @@ export default function ContactPage() {
   return (
     <div>
       <div className="container mx-auto my-[5rem]">
-        <div className="flex justify-center items-center">
-          <div className="flex basis-[60%] flex-col gap-[3rem] ">
+        <div className="flex justify-center items-center max-md:flex-col">
+          <div className="flex basis-[60%] flex-col gap-[3rem] max-md:justify-center max-md:items-center max-md:text-center">
             <h5 className=" uppercase">Contact us</h5>
             <h1>Get in touch today!</h1>
             <h4>
@@ -57,7 +57,7 @@ export default function ContactPage() {
             We help small businesses <br /> with big ideas
           </h2>
         </div>
-        <div className="flex">
+        <div className="flex max-md:flex-col">
           <div className="flex-1 flex flex-col justify-center items-center gap-[2rem] py-[5rem]">
             <i class="fa-solid fa-phone text-[7.2rem] text-[#23A6F0]"></i>
             <div className="text-center flex flex-col gap-[0.5rem]">

@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <>
+    <div className="px-[1rem]">
       <div className="container flex flex-col mx-auto py-[2rem]">
         <div className="flex justify-between items-center">
           <a href="#" className="text-[2.4rem] font-[700] text-[#252B42]">
@@ -25,7 +25,7 @@ export default function Footer() {
         <hr className="my-[3rem]" />
         <div
           id="footer-links"
-          className="flex flex-auto justify-between flex-wrap"
+          className="flex flex-auto justify-between flex-wrap max-md:flex-col max-md:gap-[3rem]"
         >
           <div className="flex flex-col gap-[1rem] flex-1">
             <h5>Company Info</h5>
@@ -83,6 +83,6 @@ export default function Footer() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

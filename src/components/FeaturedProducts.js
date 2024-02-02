@@ -10,7 +10,7 @@ export default function FeaturedProducts() {
         <h3 className="uppercase">Bestseller Products</h3>
         <p>Problems trying to resolve the conflict between</p>
       </div>
-      <div className="flex flex-wrap justify-between gap-[3rem]">
+      <div className="flex justify-between flex-wrap gap-[3rem]">
         {dummyArray.map(() => (
           <ProductCard />
         ))}

@@ -21,8 +21,8 @@ export default function Accordion() {
   return (
     <div className="">
       {accordionDummy.map((item, i) => (
-        <div className="my-[1rem]">
-          <div className="flex gap-[1rem] items-center">
+        <div className="my-[1rem] max-md:my-[3rem]">
+          <div className="flex gap-[1rem] max-md:gap-[2rem] items-center">
             {!selected ? (
               <i className="fa-solid fa-arrow-right"></i>
             ) : (
@@ -31,7 +31,7 @@ export default function Accordion() {
 
             <div
               onClick={toggle}
-              className="hover:cursor-pointer text-[1.6rem] font-[500]"
+              className="hover:cursor-pointer text-[1.6rem] font-[300]"
             >
               {item.question}
             </div>
@@ -40,7 +40,7 @@ export default function Accordion() {
           <div
             className={
               (selected ? null : "hidden") +
-              " bg-[#fafafa] text-white rounded-[1rem] text-black text-[1.4rem] p-[1rem]"
+              " bg-[#baacac] text-white rounded-[1rem] text-black text-[1.4rem] p-[1rem]"
             }
           >
             {item.answer}

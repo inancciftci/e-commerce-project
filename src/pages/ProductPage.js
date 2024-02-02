@@ -32,7 +32,7 @@ export default function ProductPage() {
               className="text-[1.6rem] font-[500] text-[#BDBDBD]"
               to="/team"
             >
-              Team
+              Shop
             </Link>
           </div>
           <div className="flex gap-[3rem] py-[2rem] max-md:flex-col">
@@ -68,9 +68,7 @@ export default function ProductPage() {
               <div className="flex gap-[1rem]">
                 {colorOptions.map((e) => (
                   <div
-                    className={
-                      "w-[3rem] h-[3rem] rounded-[50%] " + "bg-[" + e + "]"
-                    }
+                    className={"w-[3rem] h-[3rem] rounded-[50%] bg-[" + e + "]"}
                   ></div>
                 ))}
               </div>
@@ -101,7 +99,7 @@ export default function ProductPage() {
           <Link className="font-bold text-[#737373]">Reviews (0)</Link>
         </div>
         <hr className="my-[3rem]" />
-        <div className="flex justify-between gap-[2rem]">
+        <div className="flex justify-between gap-[2rem] max-md:flex-col">
           <div className="flex-1">
             <img
               className="object-cover w-[100%]"

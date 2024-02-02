@@ -12,8 +12,8 @@ export default function AboutPage() {
   return (
     <div>
       <div className="container mx-auto my-[5rem]">
-        <div className="flex justify-center items-center">
-          <div className="flex basis-[60%] flex-col gap-[3rem] ">
+        <div className="flex justify-center items-center max-md:flex-col">
+          <div className="flex basis-[60%] flex-col gap-[3rem] max-md:justify-center max-md:items-center max-md:text-center">
             <h5 className=" uppercase">About Company</h5>
             <h1 className=" uppercase">About Us</h1>
             <h4>
@@ -53,21 +53,21 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto flex justify-around items-center my-[5rem]">
-        <div className="w-[35%] flex flex-col gap-[1rem]">
+      <div className="container mx-auto flex justify-around items-center my-[5rem] max-md:flex-col">
+        <div className="w-[35%] flex flex-col gap-[1rem] max-md:w-[100%] max-md:text-center">
           <p className="text-[#E74040] text-[1.4rem]">Probmlems trying</p>
           <h2 className="text-[#252B42] text-[2.4rem]">
             Met minim Mollie non desert Alamo est sit cliquey dolor do met sent.
           </h2>
         </div>
-        <div className="w-[45%]">
+        <div className="w-[45%] max-md:w-[100%] max-md:text-center max-md:my-[2rem]">
           <p className="text-[#737373] text-[1.4rem]">
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics{" "}
           </p>
         </div>
       </div>
-      <div className="container mx-auto flex justify-between items-center my-[5rem]">
+      <div className="container mx-auto flex justify-between items-center my-[5rem] max-md:flex-col max-md:gap-[3rem]">
         <div className="flex flex-col gap-[1rem] justify-center items-center">
           <h1 className="uppercase">15k</h1>
           <p>Happy Customers</p>
@@ -127,15 +127,14 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="container mx-auto flex flex-col gap-[3rem]">
-        <div className="flex justify-center items-center flex-col gap-[2rem] mt-[5rem]">
+        <div className="flex justify-center items-center flex-col gap-[2rem] mt-[5rem] max-md:text-center">
           <h2>Big Companies Are Here</h2>
           <p className="text-center">
-            Problems trying to resolve the conflict between the two major realms{" "}
-            <br />
+            Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </p>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center max-md:flex-wrap max-md:justify-center max-md:gap-[3rem]">
           {brandImages.map((e) => (
             <div className="my-[5rem]">
               <img src={e} className="w-[100%]" alt="brand" />
@@ -145,8 +144,8 @@ export default function AboutPage() {
       </div>
       <div className="flex bg-[#2A7CC7] relative h-[64rem]">
         <div className="container mx-auto flex absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]">
-          <div className="w-[60%]">
-            <div className="w-[50rem] flex flex-col gap-[3rem] text-white">
+          <div className="w-[60%] max-md:w-[100%]">
+            <div className="w-[50rem] flex flex-col gap-[3rem] text-white max-md:text-center max-md:w-[100%]">
               <h5 className="uppercase">work with us</h5>
               <h2>Now Let's Grow Yours</h2>
               <p>
@@ -155,10 +154,10 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-          <div className="w-[40%]"></div>
+          <div className="w-[40%] max-md:hidden"></div>
         </div>
         <div className="w-[60%]"></div>
-        <div className="w-[40%] bg-[url('../public/about-bottom.png')] bg-center bg-no-repeat bg-cover"></div>
+        <div className="max-md:hidden w-[40%] bg-[url('../public/about-bottom.png')] bg-center bg-no-repeat bg-cover"></div>
       </div>
     </div>
   );

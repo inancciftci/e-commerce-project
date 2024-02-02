@@ -1,10 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+  const menuToggle = () => {
+    setShowMenu(!showMenu);
+  };
   return (
-    <>
+    <div>
       <div className="bg-[#252B42]">
         <div className="max-md:hidden container mx-auto py-[1rem] flex justify-between color text-white items-center">
           <div className="flex gap-x-[3rem]">
@@ -39,8 +43,8 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto py-[2rem] flex">
-        <div className="flex justify-between items-center gap-[3rem] w-[100%]">
+      <div className="container mx-auto py-[2rem] flex ">
+        <div className="flex justify-between items-center gap-[3rem] w-[100%] max-md:hidden">
           <a href="#" className="text-[2.4rem] font-[700]">
             Bandage
           </a>
@@ -84,7 +88,64 @@ export default function Header() {
             </div>
           </nav>
         </div>
+        <div
+          id="mobile-menu"
+          className="hidden max-md:flex justify-between w-[100%] relative"
+        >
+          <div
+            className={
+              showMenu
+                ? "   flex flex-col gap-[5rem] absolute top-[5rem] left-0 w-[100vw] items-center z-10 bg-[#F6F6F6] py-[3rem]  "
+                : " hidden "
+            }
+          >
+            <Link to="/" className="font-[500]">
+              Home
+            </Link>
+            <a href="" className="font-[500]">
+              Shop
+            </a>
+            <Link to="/about" className="font-[500]">
+              About
+            </Link>
+            <a href="" className="font-[500]">
+              Blog
+            </a>
+            <Link to="/contact" className="font-[500]">
+              Contact
+            </Link>
+            <a href="" className="font-[500]">
+              Pages
+            </a>
+          </div>
+          <div className="flex items-center gap-[2rem] px-[1rem] ">
+            <div id="hamburger" className="cursor-pointer" onClick={menuToggle}>
+              {showMenu ? (
+                <i className="fa-solid fa-x text-[2.4rem]"></i>
+              ) : (
+                <i className="fa-solid fa-bars text-[2.4rem]"></i>
+              )}
+            </div>
+            <a href="#" className="text-[2.4rem] font-[700]">
+              Bandage
+            </a>
+          </div>
+          <ul className="flex items-center gap-[2rem] text-[#252B42]">
+            <li className="text-[1.4rem] cursor-pointer flex gap-[1rem] items-center">
+              <i className="fa-solid fa-user"></i>
+            </li>
+            <li className="text-[1.4rem] cursor-pointer">
+              <i className="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li className="text-[1.4rem] cursor-pointer">
+              <i className="fa-solid fa-cart-shopping"></i>
+            </li>
+            <li className="text-[1.4rem] cursor-pointer">
+              <i className="fa-solid fa-heart"></i>
+            </li>
+          </ul>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
