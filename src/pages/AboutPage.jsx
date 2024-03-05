@@ -1,4 +1,6 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-key */
+
 
 export default function AboutPage() {
   const brandImages = [

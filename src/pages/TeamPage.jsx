@@ -1,5 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+/* eslint-disable react/jsx-key */
+
+import { Link } from "react-router-dom";
+
+
 
 export default function TeamPage() {
   const teamImgs = [

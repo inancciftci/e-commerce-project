@@ -1,14 +1,18 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const menuToggle = () => {
     setShowMenu(!showMenu);
   };
+  const location = useLocation();
+  useEffect(() => {
+    setShowMenu(false);
+  }, [location]);
   return (
-    <div>
+    <div className="header">
       <div className="bg-[#252B42]">
         <div className="max-md:hidden container mx-auto py-[1rem] flex justify-between color text-white items-center">
           <div className="flex gap-x-[3rem]">
@@ -17,7 +21,7 @@ export default function Header() {
               (225) 555-0118
             </button>
             <button className="flex items-center gap-x-[0.5rem]">
-              <i class="fa-regular fa-envelope"></i>
+              <i className="fa-regular fa-envelope"></i>
               michelle.rivera@example.com
             </button>
           </div>
@@ -28,16 +32,16 @@ export default function Header() {
             <h6>Follow us : </h6>
             <div className="flex items-center gap-x-[1rem]">
               <a href="https://instagram.com" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
               </a>
               <a href="https://youtube.com" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-youtube"></i>
+                <i className="fa-brands fa-youtube"></i>
               </a>
               <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-facebook"></i>
               </a>
               <a href="https://x.com" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-x-twitter"></i>
+                <i className="fa-brands fa-x-twitter"></i>
               </a>
             </div>
           </div>
@@ -132,7 +136,9 @@ export default function Header() {
           </div>
           <ul className="flex items-center gap-[2rem] text-[#252B42]">
             <li className="text-[1.4rem] cursor-pointer flex gap-[1rem] items-center">
-              <i className="fa-solid fa-user"></i>
+              <Link to="/register">
+                <i className="fa-solid fa-user"></i>
+              </Link>
             </li>
             <li className="text-[1.4rem] cursor-pointer">
               <i className="fa-solid fa-magnifying-glass"></i>

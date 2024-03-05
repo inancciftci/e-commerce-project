@@ -1,6 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+/* eslint-disable no-unused-vars */
+import React from 'react'
 
 export default function Footer() {
   return (
@@ -84,5 +83,5 @@ export default function Footer() {
         </div>
       </div>
     </div>
-  );
+  )
 }

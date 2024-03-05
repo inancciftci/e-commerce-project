@@ -1,7 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+
 
 export default function CategoryCard() {
   return (
@@ -17,5 +14,5 @@ export default function CategoryCard() {
         MEN
       </a>
     </div>
-  );
+  )
 }

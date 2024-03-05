@@ -1,5 +1,5 @@
-/* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+/* eslint-disable no-unused-vars */
+import React from 'react'
 
 export default function Hero() {
   return (
@@ -32,5 +32,5 @@ export default function Hero() {
         <img className="w-[100%] h-[100%] object-cover" src="/hero-img.png" />
       </div>
     </div>
-  );
+  )
 }

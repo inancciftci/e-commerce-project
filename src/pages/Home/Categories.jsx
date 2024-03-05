@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
 import CategoryCard from "./CategoryCard";
 
 export default function Categories() {
@@ -25,5 +25,5 @@ export default function Categories() {
         </div>
       </div>
     </div>
-  );
+  )
 }
